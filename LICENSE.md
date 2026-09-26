@@ -1,6 +1,6 @@
 # Creative Commons Attribution 4.0 (CC BY 4.0)
 
-Obsah webu Dolní Posázaví je licencován pod 
+Obsah webu hansenuv_webje licencován pod 
 Creative Commons Attribution 4.0 International (CC BY 4.0).
 
 ## Můžeš:
