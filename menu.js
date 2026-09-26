@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <a href="texty.html">Texty</a>
         <a href="genealogie.html">Genealogie</a>
         <a href="lingvistika.html">Lingvistické fabulace</a>
+        <a href="rozcestnik.html">Rozcestník</a>
         <a href="kontakt.html">Kontakt</a>
     </div>
     `;
