@@ -1,0 +1,68 @@
+h1 {
+    margin: 0;
+    margin-left: -50px;
+    padding-left: 100px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fbc531;
+    border-bottom: 5px solid orange;
+}
+
+.partner-link {
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    font-size: 12px;
+    z-index: 1000;
+    text-align: right;
+}
+
+.partner-link a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu-icon {
+    position: fixed;
+    top: 22px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu {
+    position: fixed;
+    left: 0;
+    top: 70px;
+    background: #333;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    display: none;
+    z-index: 1001;
+}
+
+.menu.active {
+    display: block;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #555;
+}
+
+.menu a:hover {
+    color: #fbc531;
+}
+
+p {
+    margin-left: 50px;
+}
