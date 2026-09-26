@@ -17,8 +17,6 @@ function toggleMenu() {
     var menu = document.getElementById('menu');
     menu.classList.toggle('active');
 }
-
-// Zavře menu když klikneš mimo
 document.addEventListener('click', function(event) {
     var menu = document.getElementById('menu');
     var menuIcon = document.querySelector('.menu-icon');
