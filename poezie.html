@@ -17,12 +17,58 @@
         <img src="logo_maru_web.png" alt="Maruweb">
     </a>
 
-    <p style="margin-top: 100px;">
-       Autorská tvorba
-    </p>
+    <div class="poezie">
 
-  <p> </p>
+        <div class="seznam">
+            <h2>Básně</h2>
+            <ul>
+                <li><a onclick="ukazBasen('basen-1')">Sklepní elegie</a></li>
+                <li><a onclick="ukazBasen('basen-2')">Ráno</a></li>
+                <li><a onclick="ukazBasen('basen-3')">Krátká</a></li>
+            </ul>
+        </div>
 
+        <div class="feed" id="feed">
+            <p id="navod">Vyber si vlevo básničku.</p>
+        </div>
+
+    </div>
+
+
+    <!-- ================================================== -->
+    <!-- ZDROJ BÁSNÍ - tahle část se na stránce nezobrazuje -->
+    <!-- ================================================== -->
+    <div id="basne-zdroj">
+
+<div id="basen-1">
+<h3>Sklepní elegie</h3>
+<p>
+Ve sklepě leží celer,
+nad ním se klene tma,
+a sklepník, cellarius,
+klíče už nemá dva.
+</p>
+</div>
+
+<div id="basen-2">
+<h3>Ráno</h3>
+<p>
+Konvice píská,
+okno je bílé,
+den zatím mlčí.
+</p>
+</div>
+
+<div id="basen-3">
+<h3>Krátká</h3>
+<p>
+Tohle je celá báseň.
+</p>
+</div>
+
+    </div>
+
+    <script src="poezie.js"></script>
     <script src="menu.js"></script>
 </body>
 </html>
