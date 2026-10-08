@@ -16,20 +16,23 @@ function ukazBasen(id) {
 
     var feed = document.getElementById('feed');
 
-    // Je tahle báseň ve feedu už teď? Pak neděláme nic.
-    if (feed.querySelector('[data-basen="' + id + '"]')) {
-        return;
-    }
-
-    var zdroj = document.getElementById(id);
-
     // Při prvním kliknutí zmizí úvodní pobídka.
     var navod = document.getElementById('navod');
     if (navod) {
         navod.remove();
     }
 
-    // Vyrobíme novou kartu a nalijeme do ní obsah básně.
+    // Je tahle báseň ve feedu už teď? Pak ji jen přesuneme nahoru.
+    var uzJeVeFeedu = feed.querySelector('[data-basen="' + id + '"]');
+    if (uzJeVeFeedu) {
+        feed.prepend(uzJeVeFeedu);
+        obarviOdkazy();
+        return;
+    }
+
+    // Jinak vyrobíme novou kartu a nalijeme do ní obsah básně.
+    var zdroj = document.getElementById(id);
+
     var karta = document.createElement('div');
     karta.className = 'karta';
     karta.dataset.basen = id;
