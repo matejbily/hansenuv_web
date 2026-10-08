@@ -1,6 +1,17 @@
 // Kolik básní má zůstat ve feedu. Změnou tohoto čísla změníš všechno.
 var POCET_VE_FEEDU = 3;
 
+
+// Po načtení stránky navěsíme na každý odkaz v seznamu kliknutí.
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.seznam a').forEach(function(odkaz) {
+        odkaz.addEventListener('click', function() {
+            ukazBasen(odkaz.dataset.basen);
+        });
+    });
+});
+
+
 function ukazBasen(id) {
 
     var feed = document.getElementById('feed');
@@ -36,4 +47,15 @@ function ukazBasen(id) {
     while (feed.children.length > POCET_VE_FEEDU) {
         feed.lastElementChild.remove();
     }
+
+    obarviOdkazy();
+}
+
+
+// Modře zvýrazní v seznamu ty básně, které jsou právě ve feedu.
+function obarviOdkazy() {
+    document.querySelectorAll('.seznam a').forEach(function(odkaz) {
+        var jeVeFeedu = document.querySelector('#feed [data-basen="' + odkaz.dataset.basen + '"]');
+        odkaz.classList.toggle('ve-feedu', jeVeFeedu !== null);
+    });
 }
