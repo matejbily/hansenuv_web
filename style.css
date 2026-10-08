@@ -119,7 +119,12 @@ body {
     color: #c08800;
     text-decoration: underline;
 }
-
+/* Báseň, která je právě ve feedu. */
+.seznam a.ve-feedu {
+    color: #1565c0;
+    cursor: default;
+    text-decoration: none;
+}
 .feed {
     flex: 3 1 380px;
 }
