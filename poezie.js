@@ -1,7 +1,6 @@
 // Kolik básní má zůstat ve feedu. Změnou tohoto čísla změníš všechno.
 var POCET_VE_FEEDU = 3;
 
-
 function ukazBasen(id) {
 
     var feed = document.getElementById('feed');
