@@ -83,3 +83,73 @@ body {
     margin: 0;
     padding-top: 100px;
 }
+/* ===== Stránka s poezií ===== */
+
+.poezie {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 0 50px;
+}
+
+.seznam {
+    flex: 1 1 200px;
+}
+
+.seznam h2 {
+    margin-top: 0;
+}
+
+.seznam ul {
+    list-style: none;
+    padding: 0;
+}
+
+.seznam li {
+    margin-bottom: 12px;
+}
+
+.seznam a {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.seznam a:hover {
+    color: #c08800;
+    text-decoration: underline;
+}
+
+.feed {
+    flex: 3 1 380px;
+}
+
+#navod {
+    margin: 0;
+    color: #888;
+    font-style: italic;
+}
+
+.karta {
+    border: 1px solid #ddd;
+    border-left: 4px solid #fbc531;
+    border-radius: 6px;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.karta h3 {
+    margin-top: 0;
+}
+
+.karta p {
+    margin: 0;
+    text-align: left;
+    hyphens: none;
+    white-space: pre-line;
+}
+
+#basne-zdroj {
+    display: none;
+}
